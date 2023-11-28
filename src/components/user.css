@@ -1,0 +1,14 @@
+.User > * + * {
+    margin-top: 1rem;
+}
+.body > * + *{
+    margin-top: 1.25rem;
+}
+
+.body > a {
+    display: block;
+}
+
+.bodyInfo > * + *{
+    margin-top: .015rem;
+}

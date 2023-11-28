@@ -1,0 +1,12 @@
+.UserList{
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax(10rem,1fr));
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.UserList > * {
+    justify-self: left;
+    align-self: end;
+    aspect-ratio: 1 / 1;
+}

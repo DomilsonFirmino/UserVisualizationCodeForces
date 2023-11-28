@@ -1,0 +1,16 @@
+.submissions > * + *{
+    margin-top: 1rem;
+}
+
+.submission{
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}

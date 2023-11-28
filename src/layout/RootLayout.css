@@ -1,0 +1,34 @@
+header, footer{
+    padding-block: 1.5rem;
+}
+main{
+    padding-block: 2rem;
+}
+.active{
+    background-color: var(--clr-pop);
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    color: var(--clr-white);
+}
+.active:hover{
+    background-color: var(--clr-pop-hover);
+    color: var(--clr-white);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navItems{
+    display: flex;
+    gap: 2rem;
+}
+
+footer{
+    font-weight: var(--fw-600);
+    color: var(--clr-white);
+    background-color: var(--clr-pop);
+    align-self: end;
+}
