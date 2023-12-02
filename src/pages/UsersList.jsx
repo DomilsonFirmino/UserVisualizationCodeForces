@@ -5,9 +5,10 @@ import "./UsersList.css"
 const user = [
     "SiriusStar",
     "AtaryjR",
-    "MNjulio23",
     "angelBeast",
     "GameOver0",
+    "AbimaelQuinco001",
+    "MNjulio23",
     "chinda",
     "araujomc2004",
     "mukassameka",
@@ -31,8 +32,9 @@ user.forEach( (name , index) => {
 Url += "="+handle;
 
 function UsersList(){
-    const [users,setUsers] = useState([]);
-    const [info, setInfo] = useState(false);
+    const [users,setUsers] = useState(()=>[]);
+    const [info, setInfo] = useState(()=>false);
+    const [userShow, setUserShow] = useState(()=>4);
     
     useEffect(()=>{
         const fetchData = async ()=>{
@@ -52,15 +54,31 @@ function UsersList(){
             )
     })*/
     return(
-        <div className="UserList container">
-            {info === false && <p>Carregando todas as informações ...</p>}
-            {info === true && users.map(user =>{
-                return(
-                    <User user = {user} key={user.handle}>
-                    </User>
-                )
-            })}
-        </div>
+        <>
+            <div className="UserList container">
+                {info === false && <p>Carregando todas as informações ...</p>}
+                {info === true && users.map((user,index) =>{
+                    if(index < userShow){
+                        return(
+                            <User user = {user} key={user.handle}>
+                            </User>
+                        )
+                    }
+                })}
+            </div>
+
+            
+            <div className="UserButtons">
+                {
+                    info === true && userShow < user.length ?
+                        <button onClick={()=>setUserShow((prev)=> prev + 4)}>Mostrar mais ➡</button>:""
+                }
+                {
+                    info === true && userShow > 4 ?
+                        <button onClick={()=>setUserShow((prev)=> prev - 4)}>Mostrar menos ➡</button>:""
+                }
+            </div>
+        </>
     )
 }
 

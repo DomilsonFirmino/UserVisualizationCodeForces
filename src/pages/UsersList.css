@@ -6,7 +6,23 @@
 }
 
 .UserList > * {
-    justify-self: left;
-    align-self: end;
+    align-self: end;    
+}
+
+.UserButtons{
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    gap: 1.35rem;
+    justify-content: center;
+}
+
+.userImage{
+    width: 6rem;
     aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    border-radius: 456412rem;
+    object-fit: cover;
+    object-position: top center;
+    background-color: var(--clr-l-gray);
 }

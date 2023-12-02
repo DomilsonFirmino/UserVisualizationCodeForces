@@ -5,7 +5,7 @@ function User({user}){
     var date = new Date(user.lastOnlineTimeSeconds * 1000);
     return(
         <div className="User">
-            <img src={user.titlePhoto} alt={user.handle}  style={{width:"5rem", aspectRatio:"1:1", margin: "0 auto", objectFit: "cover"}}/>
+            <img src={user.titlePhoto} alt={user.handle} className="userImage"/>
             
             <div className="body">
 
