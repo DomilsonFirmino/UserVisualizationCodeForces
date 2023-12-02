@@ -19,13 +19,13 @@ function RootLayout(){
                                     <NavLink to="users">Usuários</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="about">Sobre</NavLink>
-                                </li>
-                                <li>
                                     <NavLink to="tutorials">Lições</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to="FAQ">PMF</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="about">Sobre</NavLink>
                                 </li>
                             </ul>
                         </nav>

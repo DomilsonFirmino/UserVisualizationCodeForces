@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function About(){
     return (
         <div className="container top-2">
-            <h2 style={{color: "var(--clr-pop)"}}>Sobre Esta pagina</h2>
+            <h1 style={{color: "var(--clr-pop)"}}>Sobre Esta pagina</h1>
             <div className="top-_1">
                 <p style={{marginBottom: ".5rem"}}>
                     Esta plataforma visa simplificar a gestão dos alunos na jornada da programação competitiva.

@@ -1,7 +1,7 @@
 function Tutorials(){
     return(
         <div className="container">
-            <h2 style={{color: "var(--clr-pop)"}}>Lições</h2>
+            <h1 style={{color: "var(--clr-pop)"}}>Lições</h1>
         </div>
     )
 }

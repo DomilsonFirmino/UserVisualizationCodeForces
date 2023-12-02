@@ -87,6 +87,16 @@ a:hover {
   color: var(--clr-pop-hover);
 }
 
+a.tag:hover{
+    color: var(--clr-white);
+    background-color: var(--clr-pop-hover);
+}
+
+a.mainTag:hover{
+  color: var(--clr-white);
+  background-color: var(--clr-pop-hover);
+}
+
 h1 {
   font-size: var(--fs-700);
   line-height: 1.1;
@@ -170,7 +180,7 @@ button:focus-visible {
 
 /*CustomProps*/
 .container{
-  width: min(100% - 2rem, 55em);
+  width: min(100% - 2rem, 58em);
   margin: 0 auto;
 }
 
