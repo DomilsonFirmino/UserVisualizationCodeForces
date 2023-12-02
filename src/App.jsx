@@ -7,6 +7,7 @@ import UserDetails from './pages/UserDetails'
 import About from './pages/About'
 import Error from './pages/Error'
 import FAQ from './pages/FAQ'
+import Tutorials from './pages/Tutorials'
 
 /*layout import*/
 import RootLayout from "./layout/RootLayout"
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
                     <Route path=':id' element={<UserDetails/>}/>
                 </Route>
                 <Route path='about' element={<About/>}/>
+                <Route path='lessons' element={<Tutorials/>}/>
                 <Route path='faq' element={<FAQ/>}/>
                 <Route path='*' element={<Error/>}></Route>
             </Route>

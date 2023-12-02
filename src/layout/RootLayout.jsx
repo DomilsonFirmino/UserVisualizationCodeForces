@@ -22,6 +22,9 @@ function RootLayout(){
                                     <NavLink to="about">Sobre</NavLink>
                                 </li>
                                 <li>
+                                    <NavLink to="tutorials">Lições</NavLink>
+                                </li>
+                                <li>
                                     <NavLink to="FAQ">PMF</NavLink>
                                 </li>
                             </ul>

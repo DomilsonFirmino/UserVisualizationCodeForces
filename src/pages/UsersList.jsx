@@ -8,7 +8,13 @@ const user = [
     "MNjulio23",
     "angelBeast",
     "GameOver0",
-    "chinda"
+    "chinda",
+    "araujomc2004",
+    "mukassameka",
+    "kirubim23",
+    "leochitaa02",
+    "lesly34",
+    "uchiha_pirex"
 ]
 
 let Url = "https://codeforces.com/api/user.info?handles";

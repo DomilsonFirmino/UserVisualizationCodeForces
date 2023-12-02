@@ -16,9 +16,20 @@ main{
 }
 
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    gap: 2rem;
+}
+
+.navbar ul{
+    padding-left: 0;
+}
+
+@media screen and (min-width: 50em) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .navItems{
