@@ -70,12 +70,12 @@ function UsersList(){
             
             <div className="UserButtons">
                 {
-                    info === true && userShow < user.length ?
-                        <button onClick={()=>setUserShow((prev)=> prev + 4)}>Mostrar mais ➡</button>:""
+                    info === true && userShow > 4 ?
+                        <button onClick={()=>setUserShow((prev)=> prev - 4)}>⬅ Mostrar menos</button>:""
                 }
                 {
-                    info === true && userShow > 4 ?
-                        <button onClick={()=>setUserShow((prev)=> prev - 4)}>Mostrar menos ➡</button>:""
+                    info === true && userShow < user.length ?
+                        <button onClick={()=>setUserShow((prev)=> prev + 4)}>Mostrar mais ➡</button>:""
                 }
             </div>
         </>

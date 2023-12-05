@@ -13,6 +13,7 @@ import Tutorials from './pages/Tutorials'
 import RootLayout from "./layout/RootLayout"
 import UserLayout from './layout/UserLayout'
 
+
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route>
@@ -24,7 +25,7 @@ const router = createBrowserRouter(
                 </Route>
                 <Route path='about' element={<About/>}/>
                 <Route path='tutorials' element={<Tutorials/>}/>
-                <Route path='faq' element={<FAQ/>}/>
+                {/*<Route path='faq' element={<FAQ/>}/>*/}
                 <Route path='*' element={<Error/>}></Route>
             </Route>
         </Route>

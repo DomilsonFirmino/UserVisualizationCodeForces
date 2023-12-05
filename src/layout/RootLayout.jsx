@@ -21,9 +21,10 @@ function RootLayout(){
                                 <li>
                                     <NavLink to="tutorials">Lições</NavLink>
                                 </li>
-                                <li>
+                               {/*
+                               <li>
                                     <NavLink to="FAQ">PMF</NavLink>
-                                </li>
+                                </li>*/}
                                 <li>
                                     <NavLink to="about">Sobre</NavLink>
                                 </li>

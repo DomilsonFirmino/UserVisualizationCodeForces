@@ -241,6 +241,10 @@ button:focus-visible {
   .two{
     grid-template-columns: auto 1fr;
   }
+
+  .twoEqual{
+    grid-template-columns: 1fr 1fr;
+  }
   
 }
 
@@ -255,5 +259,9 @@ button:focus-visible {
 }
 .top-__1 > * + *{
   margin-top: .25rem;
+}
+
+.look{
+  color: var(--clr-pop);
 }
 /*CustomProps*/

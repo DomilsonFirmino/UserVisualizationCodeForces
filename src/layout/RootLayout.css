@@ -24,6 +24,17 @@ main{
     padding-left: 0;
 }
 
+.navItems{
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 25em) {
+    
+    .navItems{
+        display: grid;
+    }
+}
 @media screen and (min-width: 50em) {
     .navbar{
         display: flex;
@@ -32,10 +43,7 @@ main{
     }
 }
 
-.navItems{
-    display: flex;
-    gap: 2rem;
-}
+
 
 footer{
     font-weight: var(--fw-600);

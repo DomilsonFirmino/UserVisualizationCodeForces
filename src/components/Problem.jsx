@@ -1,8 +1,9 @@
-function Problem({problems}){
+function Problem({problems, children}){
     return(
-        <div className="problem top-__1">
+        <div className="problem top-1">
             <p>{problems.name}</p>
             <a href={problems.link}>Resolver o problema</a>
+            <div>{children}</div>
         </div>
     )
 }
