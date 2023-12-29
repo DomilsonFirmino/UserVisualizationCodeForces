@@ -17,7 +17,8 @@ const SingleTestMath = [
 ];
 
 const SingleTestString = [
-    { id: 1, name: "Word Capitalization", link: "https://codeforces.com/problemset/problem/281/A" }
+    { id: 1, name: "Word Capitalization", link: "https://codeforces.com/problemset/problem/281/A" },
+    { id:2, name: "Again Twenty Five!", link: "https://codeforces.com/problemset/problem/630/A"}
 ];
 
 const multipleTestCases = [
