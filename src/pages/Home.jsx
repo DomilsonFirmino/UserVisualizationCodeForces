@@ -130,10 +130,13 @@ function Home(){
                     </div> 
                     <div className="tags">
                         <p>
-                            <Link to="/Tutorials#string" className="tag">Manipulação de strings</Link>
+                            <Link to="/Tutorials" className="tag">Conhecimento Inicial</Link>
                         </p>
                         <p>
-                            <Link to="/Tutorials#loop" className="tag">Loops / iterações</Link>
+                            <Link to="/Tutorials#string" className="tag">Manipulação de Strings</Link>
+                        </p>
+                        <p>
+                            <Link to="/Tutorials#loop" className="tag">Loops / Iterações</Link>
                         </p>
                     </div>
                 </div>

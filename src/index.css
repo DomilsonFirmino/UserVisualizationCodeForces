@@ -226,6 +226,15 @@ button:focus-visible {
 .grid{
   display: grid;
 }
+.flex{
+  display: flex;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.flex.wrap{
+  align-items: center;
+}
 
 .gap-2{
   gap: 2rem;
@@ -233,17 +242,30 @@ button:focus-visible {
 .gap-3{
   gap: 3rem;
 }
+.gap-4{
+  gap: 2rem;
+}
 .self-center{
   align-self: center;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 55em) {
   .two{
     grid-template-columns: auto 1fr;
   }
 
   .twoEqual{
     grid-template-columns: 1fr 1fr;
+  }
+
+  .gap-2{
+    gap:1rem;
+  }
+  .gap-3{
+    gap:2rem;
+  }
+  .gap-4{
+    gap: 4rem;
   }
   
 }
@@ -259,6 +281,9 @@ button:focus-visible {
 }
 .top-__1 > * + *{
   margin-top: .25rem;
+}
+.top-___1 > * + *{
+  margin-top: .125rem;
 }
 
 .look{
