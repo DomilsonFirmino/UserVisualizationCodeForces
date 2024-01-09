@@ -13,9 +13,9 @@ import Tutorials from './pages/Tutorials'
 import RootLayout from "./layout/RootLayout"
 import UserLayout from './layout/UserLayout'
 
-
 const router = createBrowserRouter(
     createRoutesFromElements(
+        
         <Route>
             <Route path='/' element={<RootLayout />}>
                 <Route index element={<Home/>}/>
@@ -33,9 +33,9 @@ const router = createBrowserRouter(
 )
 
 function App() {
-  return (
-    <RouterProvider router={router}/>
-  )
+    return (
+        <RouterProvider router={router}/>
+    )
 }
 
 export default App

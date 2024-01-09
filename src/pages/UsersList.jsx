@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import User from "../components/User";
+import Error from "./Error";
 import "./UsersList.css"
 
 const user = [
@@ -15,7 +16,10 @@ const user = [
     "kirubim23",
     "leochitaa02",
     "lesly34",
-    "uchiha_pirex"
+    "uchiha_pirex",
+    "djeyb",
+    "MiguelKay97",
+    "Moniz",
 ]
 
 let Url = "https://codeforces.com/api/user.info?handles";
@@ -35,29 +39,29 @@ function UsersList(){
     const [users,setUsers] = useState(()=>[]);
     const [info, setInfo] = useState(()=>false);
     const [userShow, setUserShow] = useState(()=>4);
+    const [error, setError] = useState("")
     
     useEffect(()=>{
-        const fetchData = async ()=>{
-            const response = await fetch(Url);
-            const data = await response.json();
-            setUsers(()=>data.result);
-            setInfo(true);
-        }
-
-        fetchData();
+        (async ()=>{
+            
+            try{
+                const response = await fetch(Url);
+                const data = await response.json();
+                setUsers(()=>data.result);
+                setInfo(true);
+            }catch{
+                setInfo(true)
+                setError("Erro no servidor")
+            }
+        })()
 
     },[]);
     
-    /*user.map((name)=>{
-            return(
-            <p>{name}</p>
-            )
-    })*/
     return(
         <>
-            <div className="UserList container">
+            <div className="UserList">
                 {info === false && <p>Carregando todas as informações ...</p>}
-                {info === true && users.map((user,index) =>{
+                {info === true && error==="" && users.map((user,index) =>{
                     if(index < userShow){
                         return(
                             <User user = {user} key={user.handle}>
@@ -65,16 +69,21 @@ function UsersList(){
                         )
                     }
                 })}
+                {
+                    info === true && error!=="" &&(
+                        <p>De momento não conseguimos carregar todas as informações lamentamos muito</p>
+                    )
+                }
             </div>
 
             
             <div className="UserButtons">
                 {
-                    info === true && userShow > 4 ?
+                    info === true && error==="" && userShow > 4 ?
                         <button onClick={()=>setUserShow((prev)=> prev - 4)}>⬅ Mostrar menos</button>:""
                 }
                 {
-                    info === true && userShow < user.length ?
+                    info === true && error==="" && userShow < user.length ?
                         <button onClick={()=>setUserShow((prev)=> prev + 4)}>Mostrar mais ➡</button>:""
                 }
             </div>
