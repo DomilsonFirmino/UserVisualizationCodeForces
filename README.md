@@ -1,8 +1,13 @@
-# React + Vite
+# Plataforma de para Programação Competitiva no Isutic
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão Geral
 
-Currently, two official plugins are available:
+Bem-vindo à nossa plataforma dedicada à jornada da programação competitiva, especialmente projetada para os estudantes do Isutic. Nosso principal objetivo é simplificar a administração dos alunos, proporcionando um ambiente eficiente para gerenciar assiduidade, comprometimento e aprimorar o desempenho com base nos dados fornecidos pela API do Codeforces.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Agradecimentos
+
+Agradecemos a todos os membros ativos do ICPC no INSTIC com conta no Codeforces por fazerem parte desta comunidade. Juntos, estamos construindo um espaço inspirador para o desenvolvimento na programação competitiva.
+
+## Link
+
+- Live Site URL: [Plataforma de para Programação Competitiva no Isutic](https://insticaocpc.netlify.app/)

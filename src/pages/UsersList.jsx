@@ -18,13 +18,15 @@ const user = [
     "lesly34",
     "uchiha_pirex",
     "djeyb",
-    "MiguelKay97",
-    "Moniz",
+    "Moniz"
 ]
 
 let Url = "https://codeforces.com/api/user.info?handles";
 let handle = "";
 
+function checkUsers(user){
+    return (user.length > 0)
+}
 user.forEach( (name , index) => {
     if( index === user.length - 1 ){
         handle += name;
@@ -39,7 +41,7 @@ function UsersList(){
     const [users,setUsers] = useState(()=>[]);
     const [info, setInfo] = useState(()=>false);
     const [userShow, setUserShow] = useState(()=>4);
-    const [error, setError] = useState("")
+    const [error, setError] = useState(()=>"")
     
     useEffect(()=>{
         (async ()=>{
@@ -61,7 +63,8 @@ function UsersList(){
         <>
             <div className="UserList">
                 {info === false && <p>Carregando todas as informações ...</p>}
-                {info === true && error==="" && users.map((user,index) =>{
+                {info === true && error==="" && users && users.map((user,index) =>{
+                    console.log(users)
                     if(index < userShow){
                         return(
                             <User user = {user} key={user.handle}>

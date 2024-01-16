@@ -32,6 +32,7 @@ const router = createBrowserRouter(
     )
 )
 
+
 function App() {
     return (
         <RouterProvider router={router}/>
@@ -39,3 +40,30 @@ function App() {
 }
 
 export default App
+/*
+const App = () => {
+  const [exampleState, setExampleState] = useState('This is an example state');
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
+        <Route path='/' element={<RootLayout />}>
+          <Route
+            index
+            element={<Home exampleState={exampleState} setExampleState={setExampleState} />}
+          />
+          <Route path='users' element={<UserLayout />}>
+            <Route index element={<UsersList exampleState={exampleState} />} />
+            <Route path=':id' element={<UserDetails exampleState={exampleState} />} />
+          </Route>
+          <Route path='about' element={<About exampleState={exampleState} />} />
+          <Route path='tutorials' element={<Tutorials exampleState={exampleState} />} />
+          <Route path='*' element={<Error exampleState={exampleState} />}></Route>
+        </Route>
+      </Route>
+    )
+  );
+
+  return <RouterProvider router={router} />;
+};
+*/
